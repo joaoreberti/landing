@@ -1,0 +1,32 @@
+.custom-toggler > .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 409, 250, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+@keyframes anchor-float {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+
+@keyframes anchor-underline {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #007bff;
+  }
+}
+.navbar-dark a:hover {
+  position: relative;
+  animation: anchor-float 0.2s 1 forwards;
+}
+
+.navbar-dark a:hover > .underscore {
+  width: 45%;
+  height: 1px;
+  background-color: #006ce0;
+
+  animation: anchor-underline 0.2s 1 forwards;
+}

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import TopBanner from "./components/topBanner/TopBanner";
-import SkillsTable from "./components/skillsTable/SkillsTable";
 import SkillsTableWithDiv from "./components/skillsTable/SkillsTableWithDiv";
 
 import Posts from "./components/posts/Posts";

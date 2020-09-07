@@ -26,7 +26,7 @@ const Posts = () => {
       >
         <Container>
           <h1 id="blog" className="font-weight-bold">
-            Articles and Posts
+            Github Projects
           </h1>
         </Container>
       </Jumbotron>

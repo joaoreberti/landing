@@ -44,7 +44,7 @@ const Posts = () => {
         <div className="row  justify-content-center ">
           {postsList.map((post, index) => {
             return (
-              <div className=" col-lg-4  col-md-6 col-sm-12 col-xs-12 ml-5 mb-2 mt-2">
+              <div className=" col-lg-4  col-md-6 col-sm-12 col-xs-12 mb-2 mt-2">
                 <a
                   target={"_blank"}
                   rel="noopener noreferrer"

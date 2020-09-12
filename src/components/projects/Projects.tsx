@@ -22,7 +22,7 @@ const Posts = () => {
     {
       title: "Randy Rush ",
       bodyText: `Game in React and TypeScript`,
-      source: "https://github.com/joaoreberti/landing",
+      source: "https://github.com/joaoreberti/crushCandy",
       date: "12/09/2020",
       screenshot: candyCrushScreenshot,
     },
@@ -49,7 +49,7 @@ const Posts = () => {
                   target={"_blank"}
                   rel="noopener noreferrer"
                   className=""
-                  href="https://github.com/joaoreberti/landing"
+                  href={post.source}
                 >
                   <Card className="">
                     <Card.Img variant="top" src={post.screenshot} />

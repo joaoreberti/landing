@@ -6,8 +6,10 @@ import {
   Jumbotron,
   Container,
 } from "react-bootstrap";
+import "./Projects.css";
 import gitHubSvg from "../../img/github.svg";
 import screenShot from "../../img/Screenshot from 2020-09-07 22-04-55.png";
+import candyCrushScreenshot from "../../img/Screenshot from 2020-09-12 16-50-49.png";
 const Posts = () => {
   const postsList = [
     {
@@ -15,6 +17,14 @@ const Posts = () => {
       bodyText: `Project built with React and Bootstrap`,
       source: "https://github.com/joaoreberti/landing",
       date: "07/09/2020",
+      screenshot: screenShot,
+    },
+    {
+      title: "Randy Rush ",
+      bodyText: `Game in React and TypeScript`,
+      source: "https://github.com/joaoreberti/landing",
+      date: "12/09/2020",
+      screenshot: candyCrushScreenshot,
     },
   ];
 
@@ -34,7 +44,7 @@ const Posts = () => {
         <div className="row">
           {postsList.map((post, index) => {
             return (
-              <div className="col-lg-4 offset-lg-4  offset-md-3 col-md-6 col-sm-12 mb-2 mt-2">
+              <div className="col-lg-5 offset-lg-1 col-md-6 col-sm-12 mb-2 mt-2">
                 <a
                   target={"_blank"}
                   rel="noopener noreferrer"
@@ -42,7 +52,7 @@ const Posts = () => {
                   href="https://github.com/joaoreberti/landing"
                 >
                   <Card className="">
-                    <Card.Img variant="top" src={screenShot} />
+                    <Card.Img variant="top" src={post.screenshot} />
                     <Card.Body className="bg-gray ">
                       <Card.Title>{post.title}</Card.Title>
                       <Card.Text className="my-p-secondary-2">
@@ -50,7 +60,7 @@ const Posts = () => {
                           ? `${post.bodyText.slice(0, 120)} (...).`
                           : `${post.bodyText}`}
                       </Card.Text>
-                      <div className=" d-flex flex-row justify-content-between align-items-end">
+                      <div className=" card-rodape d-flex flex-row justify-content-between align-items-end">
                         <div className="">{post.date}</div>
 
                         <img

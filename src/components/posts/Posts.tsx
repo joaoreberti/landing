@@ -2,8 +2,6 @@ import React from "react";
 import "./Posts.css";
 import {
   Card,
-  CardColumns,
-  Button,
   Jumbotron,
   Container,
 } from "react-bootstrap";

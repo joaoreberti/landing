@@ -1,6 +1,6 @@
 import React from "react";
 import "./SkillsTable.css";
-import { Table, Jumbotron, Container, Row, Col } from "react-bootstrap";
+import { Jumbotron, Container, Row, Col } from "react-bootstrap";
 import frontEndSvg from "../../img/code.svg";
 import backEndSvg from "../../img/platform.svg";
 import flexSvg from "../../img/flex.svg";
